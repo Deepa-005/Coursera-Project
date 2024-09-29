@@ -1,0 +1,71 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: rgb(12, 12, 12);
+    margin: 0;
+}
+
+.screen {
+    background-color: #444;
+    align-items: center;
+    align-content: center;
+    text-align:center;
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+    width: 1000px; /* Set width for the screen */
+    height: 150px; /* Set height for the screen */
+    border-radius: 5px;
+    margin-left: 150px ;
+}
+
+.seats {
+    flex-direction: row;
+    margin-left: 220px;
+    margin-top: 50px;
+}
+
+
+.row {
+    display: flex;
+    /* justify-content: left Center seats in the row */
+    margin: 20px 10px; /* Add space between rows */
+}
+
+.seat {
+    width: 30px;
+    height: 30px;
+    margin: 5px;
+    background-color: #ccc;
+    border: 1px solid #555;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    border-radius: 3px; /* Rounded corners for seats */
+}
+
+.seat.selected {
+    background-color: #6fe3b2; /* Selected seat color */
+}
+
+.seat.booked {
+    background-color: #e74c3c; /* Booked seat color */
+    cursor: not-allowed;
+}
+
+button {
+    padding: 10px 20px;
+    margin-top: 20px;
+    font-size: 16px;
+    margin-left: 575px;
+}
+
+.selected-seats {
+    margin-top: 20px;
+    font-weight: bold;
+    text-align: center;
+    color: white;
+}
+
+#head{
+    color: white;
+    text-align:center;
+}
